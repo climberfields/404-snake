@@ -66,3 +66,16 @@ def on_loop(self):
         self.apple.draw(self._display_surf, self._apple_surf)
         self.computer.draw(self._display_surf, self._image_surf)
         pygame.display.flip()
+def target(self,dx,dy):
+    if self.x[0] &gt; dx:
+        self.moveLeft()
+
+    if self.x[0] &lt; dx:
+        self.moveRight()
+
+    if self.x[0] == dx:
+        self.moveDown()
+
+    if self.y[0] &gt; dy:
+        self.moveUp()
+        
