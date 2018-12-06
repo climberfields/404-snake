@@ -34,3 +34,35 @@ class Computer:
                     self.y[0] = self.y[0] - self.step
                 if self.direction == 3:
                     self.y[0] = self.y[0] - self.step
+        
+        
+        self.updateCount = 0
+
+veRight(self):
+if.direction = 0 
+
+veLeft(self):
+if.direction = 1
+
+veUp(self):
+if.direction = 2
+
+veDown(self):
+if.direction = 3
+
+aw(self, surface, image):
+r in range(0, self.length):
+    surface.blit(image,(self.x[i], self.y[i]))
+
+def on_loop(self):
+    self.player.update()
+    self.Computer.update(
+    )
+
+
+    def on_render(self):
+        self._display_surf.fill((0,0,0))
+        self.player.draw(self._display_surf, self._image_surg)
+        self.apple.draw(self._display_surf, self._apple_surf)
+        self.computer.draw(self._display_surf, self._image_surf)
+        pygame.display.flip()
